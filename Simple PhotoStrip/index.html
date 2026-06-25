@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photostrip Template – DSLR Booth</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body class="fmt-a theme-default">
+
+  <!-- ── Top bar ── -->
+  <div class="topbar">
+    <div class="switcher">
+      <button class="fmt-btn active" onclick="setFormat('a')">① 2 Strips · 3 Photos</button>
+      <button class="fmt-btn"        onclick="setFormat('b')">② 6×4 4R · 4 Pose</button>
+      <button class="fmt-btn"        onclick="setFormat('c')">③ 1 Strip · 3 Photos</button>
+      <button class="fmt-btn"        onclick="setFormat('d')">④ 6×4 4R · Single</button>
+    </div>
+  </div>
+
+  <div class="format-label" id="fmt-label">Format A — 2 portrait strips · 3 photos each · B6 (128×182mm)</div>
+
+  <!-- ── Main layout: preview + theme panel ── -->
+  <div class="main-layout">
+
+    <div class="page-preview" id="page"></div>
+
+    <!-- ── Theme sidebar ── -->
+    <div class="theme-panel">
+      <div class="theme-panel-title">THEMES</div>
+
+      <button class="theme-btn active" onclick="setTheme('default')" title="Default">
+        <div class="theme-thumb theme-thumb-default">
+          <div class="tt-strip">
+            <div class="tt-slot"></div>
+            <div class="tt-slot"></div>
+            <div class="tt-slot"></div>
+          </div>
+        </div>
+        <span>Default</span>
+      </button>
+
+      <button class="theme-btn" onclick="setTheme('ribbon')" title="Ribbon / Bow">
+        <div class="theme-thumb theme-thumb-ribbon">
+          <div class="tt-strip tt-strip-ribbon">
+            <div class="tt-slot tt-slot-ribbon"></div>
+            <div class="tt-slot tt-slot-ribbon"></div>
+            <div class="tt-slot tt-slot-ribbon"></div>
+          </div>
+        </div>
+        <span>Ribbon</span>
+      </button>
+
+      <button class="theme-btn" onclick="setTheme('airmail')" title="Airmail">
+        <div class="theme-thumb theme-thumb-airmail">
+          <div class="tt-strip tt-strip-airmail">
+            <div class="tt-slot tt-slot-airmail"></div>
+            <div class="tt-slot tt-slot-airmail"></div>
+            <div class="tt-slot tt-slot-airmail"></div>
+          </div>
+        </div>
+        <span>Airmail</span>
+      </button>
+
+      <button class="theme-btn" onclick="setTheme('special')" title="Special Day">
+        <div class="theme-thumb theme-thumb-special">
+          <div class="tt-strip tt-strip-special">
+            <div class="tt-slot tt-slot-special"></div>
+            <div class="tt-slot tt-slot-special"></div>
+            <div class="tt-slot tt-slot-special"></div>
+          </div>
+        </div>
+        <span>Special</span>
+      </button>
+
+      <button class="theme-btn" onclick="setTheme('polaroid')" title="Polaroid">
+        <div class="theme-thumb theme-thumb-polaroid">
+          <div class="tt-polaroid-cam">
+            <div class="tt-cam-flash"></div>
+            <div class="tt-cam-lens"></div>
+            <div class="tt-cam-shutter"></div>
+          </div>
+          <div class="tt-strip tt-strip-polaroid">
+            <div class="tt-slot tt-slot-polaroid"></div>
+            <div class="tt-slot tt-slot-polaroid"></div>
+            <div class="tt-slot tt-slot-polaroid"></div>
+          </div>
+        </div>
+        <span>Polaroid</span>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ── Action bar ── -->
+  <div class="actions">
+    <button class="action-btn" onclick="clearAll()">✕ Clear Photos</button>
+    <button class="action-btn" onclick="printPage()">⌘ Print</button>
+    <button class="action-btn primary" onclick="savePDF()">⬇ Save as PDF</button>
+  </div>
+
+  <div id="file-inputs"></div>
+  <script src="app.js"></script>
+</body>
+</html>
