@@ -1,0 +1,7 @@
+if ($status === 'COMPLETED') {
+    $displayStatus = 'COMPLETED';
+} elseif ($endTime > $now) {
+    $displayStatus = 'ACTIVE';
+} else {
+    $displayStatus = 'COMPLETED';
+}
