@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lorenz — Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">Lorenzen S. Ilon</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <!-- EDIT ME: swap this div for <img class="avatar-photo" src="your-photo.jpg" alt="Lorenz"> when you have a headshot -->
+    <div class="avatar">
+      <div class="avatar-inner">
+        <img class="avatar-inner" src="img/profile.jpg" alt="Lorenz">
+      </div>
+    </div>
+
+    <div>
+      <div class="eyebrow">Full-stack developer</div>
+      <h1>Lorenzen S. Ilon</h1>
+      <p class="lede">
+        I'm an Information Technology student who builds things that connect
+        people to what they need — a library system that connects readers
+        to books, a mobile app that connects students to scholarships, a
+        parking system that connects drivers to open slots.
+      </p>
+      <div class="nav-pills">
+        <a href="#work" class="nav-pill">Work</a>
+        <a href="#about" class="nav-pill alt">About</a>
+        <a href="#contact" class="nav-pill dark">Contact</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-eyebrow">About</div>
+    <h2>How I work</h2>
+    <p class="about-copy">
+      I'm a information technology student who likes finishing what I start.
+      Every project below is a working build, deployed and documented,
+      not a mockup left half done. I move comfortably between a PHP
+      backend, a MySQL schema, and a React Native front end, and I care
+      about the small details, like a login that actually verifies who
+      you are.
+    </p>
+    <div class="skills">
+      <div class="skill-card">
+        <div class="sk-label">Frontend</div>
+        <div class="sk-value">React Native, Expo</div>
+      </div>
+      <div class="skill-card">
+        <div class="sk-label">Backend</div>
+        <div class="sk-value">PHP (MVC &amp; procedural)</div>
+      </div>
+      <div class="skill-card">
+        <div class="sk-label">Data</div>
+        <div class="sk-value">MySQL</div>
+      </div>
+      <div class="skill-card">
+        <div class="sk-label">Auth</div>
+        <div class="sk-value">TOTP 2FA, RBAC</div>
+      </div>
+      <div class="skill-card">
+        <div class="sk-label">Design</div>
+        <div class="sk-value">Figma, UI systems</div>
+      </div>
+      <div class="skill-card">
+        <div class="sk-label">Deploy</div>
+        <div class="sk-value">Hostinger, EAS Build</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="section-eyebrow">Work</div>
+    <h2>Selected projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- EDIT ME: replace each .card-thumb div with <img class="card-thumb" src="your-screenshot.png" alt="..."> once you have real screenshots -->
+      <div class="card">
+        <div class="card-thumb thumb-mint"><span>LibroTrack</span></div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>LibroTrack</h3>
+            <span class="status">Deployed</span>
+          </div>
+          <p>PHP MVC library system with full CRUD and TOTP 2FA on admin login.</p>
+          <div class="tags"><span>PHP</span><span>MySQL</span><span>MVC</span><span>2FA</span></div>
+          <div class="card-links">
+            <a href="https://github.com/lrnzn/LibroTrack" target="_blank" rel="noopener noreferrer">Code</a>
+            <a href="http://librotrack.site.je/public/" target="_blank" rel="noopener noreferrer">Live demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-thumb thumb-purple"><span>ScholarTrack</span></div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>ScholarTrack</h3>
+            <span class="status">Shipped APK</span>
+          </div>
+          <p>React Native app matching Filipino students to scholarships.</p>
+          <div class="tags"><span>React Native</span><span>Expo</span><span>EAS Build</span></div>
+          <div class="card-links">
+            <a href="https://github.com/lrnzn/ScholarTrack" target="_blank" rel="noopener noreferrer">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-thumb thumb-teal"><span>ParkU</span></div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>ParkU</h3>
+            <span class="status">Early project</span>
+          </div>
+          <p>Car parking reservation system with a live slot map and admin dashboard.</p>
+          <div class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+          <div class="card-links">
+            <!-- EDIT ME: point to the new standalone ParkU repo -->
+            <a href="https://github.com/lrnzn/ParkU" target="_blank" rel="noopener noreferrer">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-thumb thumb-mint"><span>PhotoStrip</span></div>
+        <div class="card-body">
+          <div class="card-top">
+            <h3>PhotoStrip</h3>
+            <span class="status">Small business</span>
+          </div>
+          <p>Browser-based photostrip designer built for a school event photobooth.</p>
+          <div class="tags"><span>JavaScript</span><span>html2canvas</span><span>jsPDF</span></div>
+          <div class="card-links">
+            <!-- EDIT ME: point to the new standalone PhotoStrip repo -->
+            <a href="https://github.com/lrnzn/PhotoStrip" target="_blank" rel="noopener noreferrer">Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="section-eyebrow" style="color:var(--mint);">Contact</div>
+    <h2>Let's talk</h2>
+    <p class="lede">Open to internships, freelance work, and anything worth building.</p>
+    <div class="contact-links">
+      <!-- EDIT ME -->
+      <a href="mailto:lorenzenilon@gmail.com">lorenzenilon@gmail.com</a>
+      <a href="https://github.com/lrnzn" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <!-- EDIT ME -->
+      <a href="https://www.linkedin.com/in/lorenzen-ilon-340a30269/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+    <p class="fine-print">Built by Lorenz — 2026</p>
+  </div>
+</footer>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
