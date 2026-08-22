@@ -227,13 +227,6 @@
     position:relative;
     overflow:hidden;
   }
-  .card-thumb::after{
-    content:"";
-    position:absolute;
-    inset:0;
-    background-image:
-      repeating-linear-gradient(135deg, rgba(255,255,255,0.06) 0 2px, transparent 2px 14px);
-  }
   .card-thumb span{
     font-family:'Space Grotesk', sans-serif;
     font-weight:600;
