@@ -106,7 +106,7 @@
     font-size:64px;
     color:var(--slate);
   }
-  /* EDIT ME: replace .avatar with <img class="avatar-photo" src="your-photo.jpg"> to use a real photo */
+  
   .eyebrow{
     font-size:13px;
     letter-spacing:1px;
@@ -220,9 +220,10 @@
   .card-bar{ display:none; }
   .card-thumb{
     height:150px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    width:100%;
+    display:block;
+    object-fit:cover;
+    object-position:center;
     position:relative;
     overflow:hidden;
   }
@@ -241,10 +242,7 @@
     letter-spacing:0.3px;
     z-index:1;
   }
-  .thumb-mint{ background:linear-gradient(135deg, var(--mint) 0%, var(--teal) 100%); }
-  .thumb-purple{ background:linear-gradient(135deg, var(--purple) 0%, #5a0084 100%); }
-  .thumb-teal{ background:linear-gradient(135deg, var(--teal) 0%, var(--slate) 100%); }
-  /* EDIT ME: replace .card-thumb divs with <img class="card-thumb" src="screenshot.png"> once you have real screenshots */
+
   .card-body{ padding:20px 24px 20px; }
   .card-top{
     display:flex;
